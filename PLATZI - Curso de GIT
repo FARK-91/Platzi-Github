@@ -1,0 +1,114 @@
+PLATZI - Curso de GIT
+
+Comandos:
+Crea un nuevo repositorio
+- git init nombre_repo  
+
+
+- Estando dentro de una carpeta puedo correr el comando git init para convertir esa carpeta en un repo.
+
+
+Para sacar un archivo de staging y ademas borrarlo del repo.
+- git rm -f nombre_archivo  
+
+
+Para agregar todos los archivos a staing.
+- git add -A
+
+
+Para concatenar un nuevo commit, de uno que ya hice.
+- git commit --amend 
+
+
+Para ver todos los commits hechos en el repo.
+- git log
+
+
+Para etiquetar los commit.
+- git tag 0.5 (version ligera)
+- git tag -a 0.5 -m 'version estable del proyecto' (version anotados)
+- git tag -l (para ver la lista de etiquetas)
+Se puede etiquetar commits anteriores apuntando a su SHA
+Para ello debo acudir a git log, copiar el SHA del commit deseado y etiquetarlo.
+- git tag 0.3 SHA
+Para eliminar un tag.
+- git tad -d 0.3
+Para renombrar un tag.
+- git tag -f -a 0.1 -m 'inicio del proyecto' SHA
+
+
+GIT LOG: Historico del proyecto
+Para ver una version resumida del log
+- git log --oneline
+Para ver el grafico o ramificacion del proyecto
+- git log --oneline --graph
+Para buscar un commit por su orden de creacion, por ejemplo el ultimo commit creado.
+- git log -1
+El penultimo commit.
+- git log -2
+
+
+Revisando los cambios entre versiones
+Para chequear los cambios de un commit en especifico
+- git diff SHA
+Para chequear los cambios que hubo entre un commit y otro
+- git diff SHA0 SHA1
+
+
+Para Volver en el tiempo - GIT RESET
+Hay tres tipos de reset | --soft | --mixed | --hard
+EL GIT RESET --SOFT es totalmente excluyente, es decir que no toma en cuenta el SHA al que estas apuntando si no mas bien te tumba todos los commit creados a partir de ese SHA. Pero la ventaja es que te mantiene los cambios hechos en el STAGING no los borra definitivamente.
+- git reset --soft SHA
+EL GIT RESET --MIXED funciona igual que el anterior con la diferencia que descarta tus cambios del STAGING.
+EL GIT RESET --HARD Te devuelve hasta el SHA deseado eliminando todo el contenido tanto del STAGING como del WORKING DIRECTORY.
+
+
+GIT BRANCH
+Para eliminar una rama
+- git branch -D nombre_rama
+
+Para renombrar una rama
+- git branch -m nuevo_nombre
+
+GIT CHECKOUT
+Sirve para movernos entre ramas y commits, por ejemplo si estuve trabajando los ultimos 10 dias y sin saber cree un bug, puedo ir moviendome entre SHA para ir descubriendo donde se origino el bug.
+- git checkout SHA
+
+Si nos movemos a un SHA podemos crear una nueva rama a partir de ese SHA
+- git 	checkout -b nombre_rama_branch
+
+
+GIT REBASE
+git rebase: hace prácticamente lo mismo que merge, cambiamos la historia de nuestro proyecto sin crear bifurcaciones del proyecto.
+Tambien sirve para editar o eliminar commit con el siguiente comando, pero antes debemos estar en la rama y commit que deseas cambiar, para ello puedes usar git reset SHA o git branch SHA para elegir el commit.
+- git rebase -i nombre_rama
+
+GIT STASH
+NOTA Importante:
+Si estamos trabajando en una rama y decidimos cambiar a otra, dichos cambios se iran a la rama donde nos vamos a mover. Se puede dar el caso que nos querramos mover a una rama pero aun no queremos llevar los cambio de la rama actual a STAGIN, para ello exite el GIT STASH.
+- git stash (para guardar el status, es como un stagin virtual)
+Para listar los stash
+- git stash list
+Para eliminar los stash
+- git stash drop stash@{numero_de_stash}
+Para volver a un stash
+- git stash apply stash@{numero_de_stash}
+
+CHERRY PICK
+Se usa para escoger un commit en especifico de una rama especifica y llevarlo a otra rama deseada.
+Para ello debemos copiar el SHA deseado, movernos a la rama deseada y lanzar el comando.
+- git cherry-pick SHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
