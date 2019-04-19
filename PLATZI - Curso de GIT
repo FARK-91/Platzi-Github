@@ -32,7 +32,7 @@ Se puede etiquetar commits anteriores apuntando a su SHA
 Para ello debo acudir a git log, copiar el SHA del commit deseado y etiquetarlo.
 - git tag 0.3 SHA
 Para eliminar un tag.
-- git tad -d 0.3
+- git tag -d 0.3
 Para renombrar un tag.
 - git tag -f -a 0.1 -m 'inicio del proyecto' SHA
 
