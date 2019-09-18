@@ -1,0 +1,27 @@
+git checkout sha0 
+
+Permite regresar en el tiempo apuntando a su SHA o ID del commit, sin perder los cambios o commits realizados anteriormente
+
+Ejemplo:
+
+--	git checkout 95336b8e76f2174e3c37e6409da1a9245adfae79
+
+Te devuelve a los cambios de ese commit sin perder los anteriores.
+
+Si no quieres cambiar nada y quieres regresar a donde estabas, basta con hacer:
+
+--	git checkout master
+
+Si quiero hacerlo con un archivo en especifico:
+
+--	git checkout 95336b8e76f2174e3c37e6409da1a9245adfae79 historia.txt
+
+Para volver:
+
+--	git checkout master historia.txt
+
+****************************************************
+
+git log --stat
+
+Permite ver el historial de commits con detalles en cambios de bytes, especificamente de los archivos que cambiaron.
