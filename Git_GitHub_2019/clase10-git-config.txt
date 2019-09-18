@@ -1,0 +1,3 @@
+git config --list
+
+Lista los parametros de configuracion del repositorio, entre ellos el email y nombre del usuario.
