@@ -3,3 +3,7 @@ Mi nombre es Renier Ferrer,
 Tengo 28 años, me dedico a la programacion web.
 
 Vivo en Caracas - Venezuela
+
+Estoy creando una historia para conocer la funcionalidad de Git (esta es la 2da vez que escribo esto) Anteriormente, utilice el comando git reset --hard
+
+Ahora voy a utilizar el comando git reset --soft
