@@ -1,0 +1,11 @@
+git diff sha0 sha1
+
+Permite ver los cambios entre 2 versiones apuntando a su SHA o ID del commit
+
+Ejemplo:
+
+git diff 95336b8e76f2174e3c37e6409da1a9245adfae79 e8f1819656613086571bf78448d598ff54090a2e
+
+Mostrara la diferencia entre ambas versiones, lo que cambio.
+
+Nota: Es recomendable siempre comparar desde una version vieja hacia una nueva, esyo quiere decir que primero debemos colocar el SHA de la vesion mas antigua y luego el SHA de la version mas actual.
