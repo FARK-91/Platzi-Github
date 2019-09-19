@@ -1,0 +1,24 @@
+git config -l
+
+Permite conocer la configuracion de git en tu entorno local.
+
+Ejemplo:
+
+--	git commit -l
+
+Muestra parametros como:
+	* user.email
+	* user.name
+	* remote.origin.url
+
+Entre otras caracteristicas propias del repositorio.
+
+*************************************************************************
+
+Para cambiar algunos parametros, podemos hacer lo siguiente:
+
+--	git config --global user.email "nuevo_email"
+
+Ejemplo:
+
+--	git config --global user.email "reniferrer91@hotmail.com"

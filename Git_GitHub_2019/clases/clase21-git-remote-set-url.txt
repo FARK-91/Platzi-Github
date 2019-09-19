@@ -1,0 +1,9 @@
+git remote set-url
+
+Permite cambiar el URL del repositorio remoto.
+
+Por Ejemplo si antes trabajaba con HTTPS puedo cambiarlo a SSH:
+
+--	git remote set-url nueva_url.com
+
+Se coloca directa la URL sin parentesis ni comillas
