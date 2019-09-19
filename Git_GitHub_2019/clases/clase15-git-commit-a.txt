@@ -1,0 +1,9 @@
+git commit -a 
+
+Permite agregar los archivos ya trakeados a staging y hacer el commit en un mismo comando.
+
+Ejemplo:
+
+--	git commit -a
+
+Agrega a stagin y abre automaticamente el mensaje para el commit.
