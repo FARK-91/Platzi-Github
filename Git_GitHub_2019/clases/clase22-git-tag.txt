@@ -1,0 +1,29 @@
+git tag -a nombre_del_tag -m "Mensaje referente al tag" SHA_ID
+
+Permite agregar una nueva etiqueta a algun commit en especifico
+
+Ejemplo:
+
+--	git tag -a v2.0 -m "mensaje" 4290c47
+
+git tag 
+
+Permite ver todos los tags creados
+
+git show-ref --tags
+
+Permite ver de forma detallada a que commit esta asociada cada tag.
+
+git push origin --tags
+
+Permite subir al repo los tags creados en tu entorno local.
+
+git tag -d nombre_tag
+
+Permite eliminar un tag en tu entorno local
+
+Nota: Esta forma no elimina el tag del repositorio remoto porque GIT entiende que nos puede servir para regresar en el tiempo.
+
+Para eliminarlo del remoto hacemos lo diguiente.
+
+git push origin :refs/tags/nombre_tag
