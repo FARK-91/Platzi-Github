@@ -1,0 +1,13 @@
+git log --all --graph --decorate --oneline
+
+Permite ver todo el historico del repositorio en forma grafica.
+
+Para resumir el comando porque es muy largo, basta con invocar una utilidad de linux llamada ALIAS
+
+--	alias nuevo_nombre_comando="comando_largo"
+
+Ejemplo:
+
+--	alias arbolito="git log --all --graph --decorate --oneline"
+
+Ahora cada vez que despliegue el comando arbolito es como si ejecutara el comando largo.

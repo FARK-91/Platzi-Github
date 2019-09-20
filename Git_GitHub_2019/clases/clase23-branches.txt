@@ -1,0 +1,5 @@
+git show-branch --all
+
+Permite ver todas las ramas diponibles tanto en entorno local como en remoto.
+
+
