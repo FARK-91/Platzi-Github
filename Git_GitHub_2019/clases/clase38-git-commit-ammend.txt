@@ -1,3 +1,1 @@
---	git cherry-pick SHA : te trae los cambios del SHA o commit apuntado
-
-Nota: Considerando que el commit puede estar en cualquier rama del repo.
+--	git commit --ammend : permite reescribir el commit anterior, agregando los nuevos cambios sin crear un commit nuevo.
