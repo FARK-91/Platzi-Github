@@ -1,0 +1,11 @@
+--	git stash Guarda los cambios temporalmente
+
+--	git stash list Muestra la lista de cambios temporales
+
+--	git stash pop Saca los cambios temporales y regresa los cambios al directorio de trabajo
+
+--	git stash drop Elimina los cambios temporales
+
+Guardar los cambios y ponerlos en una rama
+
+--	git stash branch english-version Coloca el stash en una rama
