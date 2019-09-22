@@ -1,0 +1,3 @@
+--	git clean --dry-run : Vista previa de los archivos que va a borrar
+
+--	git clean -f : Elimina definitivamente los archivos no deseados (los que nunca estuvieron en staging)
